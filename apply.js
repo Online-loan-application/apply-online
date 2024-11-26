@@ -49,11 +49,10 @@ allFilled = false;
 });
 
 const secondInputs = [
-    document.getElementById('bank'),
+    document.getElementById('payDate'),
     document.getElementById('reason'),
-    document.getElementById('accountNumber'),
-    document.getElementById('loanAmount'),
-    document.getElementById('loanDuration')
+    document.getElementById('accountDetails'),
+  
 ];
 let allFilled = false;
 // Add an input event listener to each input

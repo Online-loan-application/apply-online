@@ -38,20 +38,19 @@
                 <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
                 
             </div>
-            <input type="submit" id="submit-button" value="Submit">
+            <input type="submit" id="submit-button" value="Next>>">
         </div>
         <div id="second-form" style="display: none;">
-            <label for="bank">Bank:</label> <br>
-            <input type="text" name="bank" id="bank" placeholder="Enter Your Bank" required> <br>
+
+            <label for="payDate">Pay Day:</label> <br>
+            <input type="text" name="payDate" id="payDate" placeholder="Enter Your Salary Date" required> <br>
+
             <label for="eason">Reason for application</label> <br>
             <input type="text" name="reason" id="reason" placeholder="Enter a reason why you need this loan" required> <br>
-            <label for="accountNumber">Account Number:</label> <br>
-            <input type="number" name="accountNumber" id="accountNumber" placeholder="Enter Your Account Number" required> <br>
-            <label for="loanAmount">Loan Amount:</label> <br>
-            <input type="number" name="loanAmount" id="loanAmount" placeholder="Enter Your Loan Amount" required> <br>
-            <label for="loanDuration">Loan Duration:</label> <br>
-            <input type="text" name="loanDuration" id="loanDuration" placeholder="Enter Your Loan Duration" required> <br>
-      
+            
+            <label for="accountDetails">Account Details:</label> <br>
+            <textarea name="accountDetails" id="accountDetails"></textarea>
+
             <input type="submit" id="submitButton" value="Submit">
         </div>
     </form>

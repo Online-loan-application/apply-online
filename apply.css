@@ -36,7 +36,8 @@ input[type='text'],
 input[type='number'],
 input[type='email'],
 input[type='date'],
-input[type='password']{
+input[type='password'],
+#accountDetails{
     width: 98%;
     outline: none;
     padding: 4%;
